@@ -41,7 +41,9 @@
     ]
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.30.1"
   }
 }
