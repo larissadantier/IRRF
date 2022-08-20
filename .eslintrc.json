@@ -1,37 +1,25 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "eslint-config-prettier"
-  ],
-  "overrides": [],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": [
-    "react"
-  ],
-  "rules": {
-    "prettier/prettier": "error",
-    "react/jsx-filename-extension": [
-      "warn",
-      {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
-    "import/prefer-default-export": "off",
-    "jsx-quotes": [
-      "error",
-      "prefer-single"
-    ]
-  }
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": ["off"],
+        "react/jsx-uses-react": ["off"],
+        "react/jsx-props-no-spreading": ["warn"],
+        "react/no-unescaped-entities": ["off"]
+    }
 }
