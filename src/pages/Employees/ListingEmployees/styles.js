@@ -21,11 +21,14 @@ export const Container = styled.div`
   }
 `;
 
+export const Title = styled.h1``;
+
 export const Table = styled.table`
-  min-width: 1000px;
+  min-width: 100%;
   table-layout: fixed;
   text-align: left;
   border-collapse: collapse;
+  margin-top: 1rem;
 `;
 
 export const Tr = styled.tr`

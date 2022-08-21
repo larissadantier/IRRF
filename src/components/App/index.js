@@ -8,15 +8,15 @@ import GlobalStyles from "../../assets/styles/global";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Provider store={store}>
+    <Provider store={store}>
+      <BrowserRouter>
         <GlobalStyles />
         <Header />
         <Container>
           <NavigationRoutes />
         </Container>
-      </Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

@@ -1,21 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
-import pessoas from "../services/pessoas.json";
-
-const INITIAL_STATE = pessoas;
+import pessoas from "../services/pessoas";
 
 const sliceEmployees = createSlice({
   name: "employees",
-  initialState: INITIAL_STATE,
+  initialState: { value: pessoas },
   reducers: {
-    addEmployee(state, { payload }) {
-      return [...state, { employees: payload }];
+    addEmployee(state, action) {
+      state.value.push(action.payload);
     },
   },
 });
 
-export default sliceEmployees.reducer;
 export const { addEmployee } = sliceEmployees.actions;
-
-export const useEmployees = (state) => {
-  return state.employees;
-};
+export default sliceEmployees.reducer;
