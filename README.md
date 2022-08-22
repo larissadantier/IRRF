@@ -67,9 +67,10 @@ npm start
 - Yarn
 yarn start
 
+Deixe aberto o Redux DevTools para observar as mudanças como adicionar ou editar contribuinte!
+
 Tudo pronto! Agora a sua aplicação vai rodar na porta localhost:3030! 😄
 
-Deixe aberto o Redux DevTools para observar mudanças!
 
 ```
 
