@@ -10,9 +10,12 @@ import {
   TBody,
   Td,
   Th,
-  Title,
+  SubTitle,
   Tr,
   StyledLink,
+  Title,
+  Text,
+  Header,
 } from "./styles";
 
 const ListingEmployees = () => {
@@ -21,47 +24,66 @@ const ListingEmployees = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
-      <Title>Seus Funcionários</Title>
-      <Table>
-        <TBody>
-          <Tr>
-            <Th>Nome</Th>
-            <Th>CPF</Th>
-            <Th>Salário</Th>
-            <Th>Desconto</Th>
-            <Th>Dependentes</Th>
-            <Th>Desconto IRPF</Th>
-            <Th>Ações</Th>
-          </Tr>
-          {employeesList.map((item) => (
-            <Tr key={item.id}>
-              <Td>{item.nome}</Td>
-              <Td>{item.cpf}</Td>
-              <Td>{formatBRL(item.salario)}</Td>
-              <Td>{formatBRL(item.desconto)}</Td>
-              <Td>{item.dependentes}</Td>
-              <Td>
-                {calculateIRRF(item.salario, item.desconto, item.dependentes)}
-              </Td>
-              <Td>
-                <Wrapper>
-                  <StyledLink to={`/employees/${item.id}`}>Editar</StyledLink>
+    <>
+      <Header>
+        <Title>Tabela e cálculas do IRRF</Title>
+        <Text>
+          A tabela do IR é um dos principais instrumentos para auxiliar os
+          contribuintes na hora de enviar as informações fiscais para a receita.
+          Afinal, é nesse documento que constam os alíquotas do Imposto de Renda
+        </Text>
 
-                  <Button
-                    onClick={() => {
-                      dispatch(deleteEmployee({ id: item.id }));
-                    }}
-                  >
-                    X
-                  </Button>
-                </Wrapper>
-              </Td>
+        <Text>
+          Isso quer dizer que é essa a fonte para você saber qual é o percentual
+          que deve ser aplicado sobre os seus rendimentos. Portando, na hora de
+          fazer o cálculo e declarar seus rendimentos, ter essa tabela é
+          fundamental para que você não envie nenhum dado errado e,
+          consequentemente, não caia na malha fina.
+        </Text>
+      </Header>
+
+      <Container>
+        <SubTitle>Seus Funcionários</SubTitle>
+        <Table>
+          <TBody>
+            <Tr>
+              <Th>Nome</Th>
+              <Th>CPF</Th>
+              <Th>Salário</Th>
+              <Th>Desconto</Th>
+              <Th>Dependentes</Th>
+              <Th>Desconto IRPF</Th>
+              <Th>Ações</Th>
             </Tr>
-          ))}
-        </TBody>
-      </Table>
-    </Container>
+            {employeesList.map((item) => (
+              <Tr key={item.id}>
+                <Td>{item.nome}</Td>
+                <Td>{item.cpf}</Td>
+                <Td>{formatBRL(item.salario)}</Td>
+                <Td>{formatBRL(item.desconto)}</Td>
+                <Td>{item.dependentes}</Td>
+                <Td>
+                  {calculateIRRF(item.salario, item.desconto, item.dependentes)}
+                </Td>
+                <Td>
+                  <Wrapper>
+                    <StyledLink to={`/employees/${item.id}`}>Editar</StyledLink>
+
+                    <Button
+                      onClick={() => {
+                        dispatch(deleteEmployee({ id: item.id }));
+                      }}
+                    >
+                      X
+                    </Button>
+                  </Wrapper>
+                </Td>
+              </Tr>
+            ))}
+          </TBody>
+        </Table>
+      </Container>
+    </>
   );
 };
 

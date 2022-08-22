@@ -8,8 +8,8 @@ export const Container = styled.div`
   border-radius: 5px;
 
   ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -23,7 +23,26 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h1``;
+export const Header = styled.header`
+  width: 100%;
+`;
+
+export const Title = styled.h2`
+  text-align: center;
+`;
+
+export const Text = styled.p`
+  color: #555;
+  font-weight: 500;
+  margin-top: 0.75rem;
+  & + & {
+    margin-top: 0.75rem;
+  }
+`;
+
+export const SubTitle = styled.h3`
+  margin-top: 1rem;
+`;
 
 export const Table = styled.table`
   min-width: 100%;
