@@ -37,7 +37,7 @@ Tecnologias utilizadas durante o projeto:
 
 ## 💻 Projeto
 
-O IRRF é um sistema de cadastros de IRRFS que auxiliam os contribuintes na hora de enviar as informações fiscais para a receita, onde irá ter disponível já os cálculos de desconto de INSS e IRRF 😄.
+O IRRF é um sistema de cadastros de IRRFS que auxiliam os contribuintes na hora de enviar as informações fiscais para a receita, onde irá ter disponível já os cálculos de desconto de INSS e IRRF, o usuário poderá excluir e editar um contribuinte! 😄.
 
 ## 😎 Iniciando 
 
