@@ -2,10 +2,12 @@ import { formatBRL } from "./formatCurrency";
 
 export function calculateIRRF(salary, socialSecurity, numberOfDependents) {
   const value = verifyATableProgressive(salary);
-  
+
   const valueIR = calculateIR(salary, socialSecurity, numberOfDependents);
 
-  return (formatBRL((valueIR * value.aliquot) - value.portion));
+  const valueIRRF = (formatBRL((valueIR * value.aliquot) - value.portion))
+
+  return valueIRRF;
 }
 
 export function calculateIR(salary, socialSecurity, numberOfDependents) {
