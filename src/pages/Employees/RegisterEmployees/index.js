@@ -4,7 +4,7 @@ import { Container, Title } from "./styles";
 const RegisterEmployees = () => {
   return (
     <Container>
-      <Title>Formulário</Title>
+      <Title>Formulário de registro</Title>
       <FormGroup />
     </Container>
   );

@@ -4,7 +4,7 @@ import { Container, Title } from "./styles";
 const UpdateEmployee = () => {
   return (
     <Container>
-      <Title>Atualizar Funcionário</Title>
+      <Title>Formulário de atualização</Title>
       <FormGroup isEdit />
     </Container>
   );
