@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <a href="https://ibb.co/YWPMYJq"><img src="https://i.ibb.co/d4zGfDH/Screen.png" alt="screen" border="0"></a>
+  <a href="https://ibb.co/YWPMYJq"><img src="https://i.ibb.co/TRnbMLy/Screen.png" alt="screen" border="0"></a>
 </p>
 
 ## 🚀 Tecnologias
