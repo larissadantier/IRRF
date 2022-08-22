@@ -41,7 +41,8 @@ export const Text = styled.p`
 `;
 
 export const SubTitle = styled.h3`
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
 `;
 
 export const Table = styled.table`
