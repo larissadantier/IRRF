@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import PropTypes from "prop-types";
 
 import { calculateINSS } from "../../helper/calculateINSS";
-import { cpfMask, moneyMask } from "../../helper/maskValue";
+import { cpfMask, moneyMask, numberMask } from "../../helper/maskValue";
 
 import { addEmployee, updateEmployee } from "../../redux/sliceEmployees";
 import Input from "../Input";
@@ -20,12 +20,17 @@ const FormGroup = ({ isEdit }) => {
   const [salario, setSalario] = useState("");
   const [desconto, setDesconto] = useState(0);
   const [dependentes, setDependentes] = useState(0);
+  const [disabled, setDisabled] = useState(false);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     targetValueINSS();
   }, [salario]);
+
+  useEffect(() => {
+    validateForm();
+  }, [nome, cpf, salario]);
 
   function handleChangeNome(event) {
     return setNome(event.target.value);
@@ -36,21 +41,11 @@ const FormGroup = ({ isEdit }) => {
   }
 
   function handleChangesalario(event) {
-    const { value } = event.target;
-
-    if (isNaN(value)) {
-      setSalario("");
-    }
-
-    if (toString(value)) {
-      setSalario("");
-    }
-
-    return setSalario(moneyMask(event.target.value));
+    return setSalario(moneyMask(numberMask(event.target.value)));
   }
 
   function handleChangedependentes(event) {
-    return setDependentes(event.target.value);
+    return setDependentes(numberMask(event.target.value));
   }
 
   function targetValueINSS() {
@@ -89,6 +84,25 @@ const FormGroup = ({ isEdit }) => {
     );
   }
 
+  function validateForm() {
+    if (!nome) {
+      setDisabled(true);
+      return;
+    }
+
+    if (!cpf) {
+      setDisabled(true);
+      return;
+    }
+
+    if (!salario || salario === "R$ 0,00") {
+      setDisabled(true);
+      return;
+    }
+
+    setDisabled(false);
+  }
+
   return (
     <Form>
       <Input placeholder="Nome" value={nome} onChange={handleChangeNome} />
@@ -107,7 +121,7 @@ const FormGroup = ({ isEdit }) => {
         min="0"
       />
 
-      <Button type="submit" onClick={handleSubmit}>
+      <Button type="submit" onClick={handleSubmit} disabled={disabled}>
         {isEdit ? "Atualizar funcionário" : "Criar novo funcionário"}
       </Button>
     </Form>

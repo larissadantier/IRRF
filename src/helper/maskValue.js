@@ -7,7 +7,7 @@ export function cpfMask(cpf) {
     .replace(/(-\d{2})\d+?$/, "$1");
 }
 
-export const moneyMask = (value) => {
+export function moneyMask(value) {
   value = value.replace(".", "").replace(",", "").replace(/\D/g, "");
 
   const options = { minimumFractionDigits: 2 };
@@ -16,4 +16,8 @@ export const moneyMask = (value) => {
   );
 
   return "R$ " + result;
-};
+}
+
+export function numberMask(number) {
+  return number.replace(/[^0-9]/g, "");
+}

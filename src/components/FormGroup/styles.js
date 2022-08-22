@@ -22,4 +22,9 @@ export const Button = styled.button`
   &:hover {
     background-color: #222;
   }
+
+  &[disabled] {
+    background: #ccc;
+    cursor: default;
+  }
 `;
