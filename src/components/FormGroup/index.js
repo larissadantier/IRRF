@@ -68,7 +68,7 @@ const FormGroup = ({ isEdit }) => {
           salario: parseFloat(
             salario.replace(/[^\d,]+/g, "").replace(",", "."),
           ),
-          desconto,
+          desconto: Number(desconto),
           dependentes: Number(dependentes),
         }),
       );
@@ -80,7 +80,7 @@ const FormGroup = ({ isEdit }) => {
         nome,
         cpf,
         salario: parseFloat(salario.replace(/[^\d,]+/g, "").replace(",", ".")),
-        desconto,
+        desconto: Number(desconto),
         dependentes: Number(dependentes),
       }),
     );
