@@ -26,7 +26,7 @@ const ListingEmployees = () => {
   return (
     <>
       <Header>
-        <Title>Tabela e cálculas do IRRF</Title>
+        <Title>Tabela e cálculos do IRRF</Title>
         <Text>
           A tabela do IR é um dos principais instrumentos para auxiliar os
           contribuintes na hora de enviar as informações fiscais para a receita.
