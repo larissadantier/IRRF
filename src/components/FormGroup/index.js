@@ -10,6 +10,7 @@ import { cpfMask, moneyMask, numberMask } from "../../helper/maskValue";
 import { addEmployee, updateEmployee } from "../../redux/sliceEmployees";
 import Input from "../Input";
 import { Form, Button } from "./styles";
+
 const FormGroup = ({ isEdit }) => {
   const employees = useSelector((state) => state.employees.value);
 
@@ -20,6 +21,7 @@ const FormGroup = ({ isEdit }) => {
   const [salario, setSalario] = useState("");
   const [desconto, setDesconto] = useState(0);
   const [dependentes, setDependentes] = useState(0);
+
   const [disabled, setDisabled] = useState(false);
 
   const dispatch = useDispatch();
@@ -67,7 +69,7 @@ const FormGroup = ({ isEdit }) => {
             salario.replace(/[^\d,]+/g, "").replace(",", "."),
           ),
           desconto,
-          dependentes,
+          dependentes: Number(dependentes),
         }),
       );
     }
@@ -79,7 +81,7 @@ const FormGroup = ({ isEdit }) => {
         cpf,
         salario: parseFloat(salario.replace(/[^\d,]+/g, "").replace(",", ".")),
         desconto,
-        dependentes,
+        dependentes: Number(dependentes),
       }),
     );
   }
