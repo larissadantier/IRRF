@@ -1,9 +1,11 @@
 import { useSelector } from "react-redux";
+import { calculateIRRF } from "../../../helper/calculateIRRF";
 import { formatBRL } from "../../../helper/formatCurrency";
 import { Container, Table, Td, Th, Title, Tr } from "./styles";
 
 const ListingEmployees = () => {
   const employeesList = useSelector((state) => state.employees.value);
+
   return (
     <Container>
       <Title>Seus Funcionários</Title>
@@ -23,6 +25,9 @@ const ListingEmployees = () => {
             <Td>{formatBRL(item.salario)}</Td>
             <Td>{formatBRL(item.desconto)}</Td>
             <Td>{item.dependentes}</Td>
+            <Td>
+              {calculateIRRF(item.salario, item.desconto, item.dependentes)}
+            </Td>
           </Tr>
         ))}
       </Table>
