@@ -7,6 +7,7 @@ import {
   Button,
   Container,
   Table,
+  TBody,
   Td,
   Th,
   Title,
@@ -23,40 +24,42 @@ const ListingEmployees = () => {
     <Container>
       <Title>Seus Funcionários</Title>
       <Table>
-        <Tr>
-          <Th>Nome</Th>
-          <Th>CPF</Th>
-          <Th>Salário</Th>
-          <Th>Desconto</Th>
-          <Th>Dependentes</Th>
-          <Th>Desconto IRPF</Th>
-          <Th>Ações</Th>
-        </Tr>
-        {employeesList.map((item) => (
-          <Tr key={item.id}>
-            <Td>{item.nome}</Td>
-            <Td>{item.cpf}</Td>
-            <Td>{formatBRL(item.salario)}</Td>
-            <Td>{formatBRL(item.desconto)}</Td>
-            <Td>{item.dependentes}</Td>
-            <Td>
-              {calculateIRRF(item.salario, item.desconto, item.dependentes)}
-            </Td>
-            <Td>
-              <Wrapper>
-                <StyledLink to={`/employees/${item.id}`}>Editar</StyledLink>
-
-                <Button
-                  onClick={() => {
-                    dispatch(deleteEmployee({ id: item.id }));
-                  }}
-                >
-                  X
-                </Button>
-              </Wrapper>
-            </Td>
+        <TBody>
+          <Tr>
+            <Th>Nome</Th>
+            <Th>CPF</Th>
+            <Th>Salário</Th>
+            <Th>Desconto</Th>
+            <Th>Dependentes</Th>
+            <Th>Desconto IRPF</Th>
+            <Th>Ações</Th>
           </Tr>
-        ))}
+          {employeesList.map((item) => (
+            <Tr key={item.id}>
+              <Td>{item.nome}</Td>
+              <Td>{item.cpf}</Td>
+              <Td>{formatBRL(item.salario)}</Td>
+              <Td>{formatBRL(item.desconto)}</Td>
+              <Td>{item.dependentes}</Td>
+              <Td>
+                {calculateIRRF(item.salario, item.desconto, item.dependentes)}
+              </Td>
+              <Td>
+                <Wrapper>
+                  <StyledLink to={`/employees/${item.id}`}>Editar</StyledLink>
+
+                  <Button
+                    onClick={() => {
+                      dispatch(deleteEmployee({ id: item.id }));
+                    }}
+                  >
+                    X
+                  </Button>
+                </Wrapper>
+              </Td>
+            </Tr>
+          ))}
+        </TBody>
       </Table>
     </Container>
   );

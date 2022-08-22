@@ -33,6 +33,14 @@ export const Table = styled.table`
   margin-top: 1rem;
 `;
 
+export const TBody = styled.tbody`
+  min-width: 100%;
+  table-layout: fixed;
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 1rem;
+`;
+
 export const Tr = styled.tr`
   border: 1.5px solid #dee2e6;
 `;
