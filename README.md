@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://ibb.co/pfqBYFw"><img src="https://i.ibb.co/VQyMNKy/seidor-new.png" alt="logo" border="0" width="300"></a>
+    <a href="[https://ibb.co/VQyMNKy](https://i.ibb.co/VQyMNKy/seidor-new.png)"><img src="https://i.ibb.co/VQyMNKy/seidor-new.png" alt="logo" border="0" width="300"></a>
 </h1>
 
 <p align="center">
@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <a href="https://ibb.co/YWPMYJq"><img src="https://i.ibb.co/TRnbMLy/Screen.png" alt="screen" border="0"></a>
+  <a href="[https://ibb.co/TRnbMLy](https://i.ibb.co/TRnbMLy/Screen.png)"><img src="https://i.ibb.co/TRnbMLy/Screen.png" alt="screen" border="0"></a>
 </p>
 
 ## 🚀 Tecnologias
