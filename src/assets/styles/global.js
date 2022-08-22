@@ -11,7 +11,6 @@ export default createGlobalStyle`
 body {
   background: #e9ecef;
   font-size: 1rem;
-  overflow: hidden;
 }
 
 button {

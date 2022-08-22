@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -47,4 +49,48 @@ export const Th = styled.th`
 export const Td = styled.td`
   padding: 0.55rem;
   border: 1.5px solid #dee2e6;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.65rem;
+`;
+
+export const Button = styled.button`
+  height: 30px;
+  color: #fff;
+  background-color: #495057;
+  padding: 0 0.65rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+
+  transition: background 0.2s ease-in;
+
+  &:hover {
+    background-color: #222;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+
+  height: 30px;
+  color: #fff;
+  background-color: #495057;
+  padding: 0 0.65rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+
+  transition: background 0.2s ease-in;
+
+  &:hover {
+    background-color: #222;
+  }
 `;

@@ -1,8 +1,12 @@
+import FormGroup from "../../../components/FormGroup";
+import { Container, Title } from "./styles";
+
 const UpdateEmployee = () => {
   return (
-    <div>
-      <h1>Atualizar Funcionário</h1>
-    </div>
+    <Container>
+      <Title>Atualizar Funcionário</Title>
+      <FormGroup isEdit />
+    </Container>
   );
 };
 
