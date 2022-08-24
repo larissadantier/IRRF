@@ -39,6 +39,8 @@ Tecnologias utilizadas durante o projeto:
 
 O IRRF é um sistema de cadastros de IRRFS que auxiliam os contribuintes na hora de enviar as informações fiscais para a receita, onde irá ter disponível já os cálculos de desconto de INSS e IRRF, o usuário poderá excluir e editar um contribuinte! 😄.
 
+OBS: uma correção foi feita, é a aplicação está dentro dos conformes!
+
 ## 😎 Iniciando 
 
 📖 Para rodar o projeto localmente você precisará seguir algumas instruções.
@@ -67,8 +69,6 @@ npm start
 - Yarn
 yarn start
 
-Deixe aberto o Redux DevTools para observar as mudanças como adicionar ou editar contribuinte!
-Acione o Disable state persisting para ver o funcionamento da aplicação em Redux DevTools
 
 Tudo pronto! Agora a sua aplicação vai rodar na porta localhost:3030! 😄
 
