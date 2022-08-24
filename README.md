@@ -59,7 +59,7 @@ npm install
 - Yarn
 yarn install
 
-### Após tudo isso, você está pronto para rodar o projeto, basta inserir o comando:
+Após tudo isso, você está pronto para rodar o projeto, basta inserir o comando:
 
 - Npm
 npm start
@@ -67,7 +67,11 @@ npm start
 - Yarn
 yarn start
 
+Deixe aberto o Redux DevTools para observar as mudanças como adicionar ou editar contribuinte!
+Acione o Disable state persisting para ver o funcionamento da aplicação em Redux DevTools
+
 Tudo pronto! Agora a sua aplicação vai rodar na porta localhost:3030! 😄
+
 
 ```
 
