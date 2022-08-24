@@ -61,7 +61,7 @@ const FormGroup = ({ isEdit }) => {
   function handleSubmit(event) {
     event.preventDefault();
     if (isEdit) {
-      return dispatch(
+      dispatch(
         updateEmployee({
           id: Number(params.id),
           nome,
@@ -73,6 +73,9 @@ const FormGroup = ({ isEdit }) => {
           dependentes: Number(dependentes),
         }),
       );
+
+      cleanInputs();
+      return 
     }
 
     dispatch(
@@ -100,13 +103,8 @@ const FormGroup = ({ isEdit }) => {
       return;
     }
 
-    if(salario === "R$ NaN"){
-      setSalario("")
-      setDisabled(true);
-      return;
-    }
+    if (!salario || salario === "R$ 0,00" || salario === "R$ NaN") {
 
-    if (!salario || salario === "R$ 0,00") {
       setDisabled(true);
       return;
     }
