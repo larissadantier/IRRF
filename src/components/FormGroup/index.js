@@ -58,7 +58,8 @@ const FormGroup = ({ isEdit }) => {
     setDesconto(Number(valueINSS));
   }
 
-  function handleSubmit() {
+  function handleSubmit(event) {
+    event.preventDefault();
     if (isEdit) {
       return dispatch(
         updateEmployee({
@@ -106,7 +107,7 @@ const FormGroup = ({ isEdit }) => {
   }
 
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <Input placeholder="Nome" value={nome} onChange={handleChangeNome} />
       <Input placeholder="CPF" value={cpf} onChange={handleChangeCpf} />
       <Input
@@ -123,7 +124,7 @@ const FormGroup = ({ isEdit }) => {
         min="0"
       />
 
-      <Button type="submit" onClick={handleSubmit} disabled={disabled}>
+      <Button type="submit" disabled={disabled}>
         {isEdit ? "Atualizar funcionário" : "Criar novo funcionário"}
       </Button>
     </Form>
