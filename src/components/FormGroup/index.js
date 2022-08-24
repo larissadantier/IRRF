@@ -85,6 +85,8 @@ const FormGroup = ({ isEdit }) => {
         dependentes: Number(dependentes),
       }),
     );
+
+    cleanInputs();
   }
 
   function validateForm() {
@@ -98,12 +100,26 @@ const FormGroup = ({ isEdit }) => {
       return;
     }
 
+    if(salario === "R$ NaN"){
+      setSalario("")
+      setDisabled(true);
+      return;
+    }
+
     if (!salario || salario === "R$ 0,00") {
       setDisabled(true);
       return;
     }
 
     setDisabled(false);
+  }
+
+  function cleanInputs() {
+    setNome("")
+    setCpf("")
+    setSalario("")
+    setDesconto(0)
+    setDependentes(0)
   }
 
   return (
