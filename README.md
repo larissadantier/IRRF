@@ -1,116 +1,113 @@
 <h1 align="center">
-    <a href="[https://ibb.co/VQyMNKy](https://i.ibb.co/VQyMNKy/seidor-new.png)"><img src="https://i.ibb.co/VQyMNKy/seidor-new.png" alt="logo" border="0" width="300"></a>
+  <a href="https://i.ibb.co/VQyMNKy/seidor-new.png"><img src="https://i.ibb.co/VQyMNKy/seidor-new.png" alt="logo" border="0" width="300"></a>
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
 
 <p align="center">
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
 </p>
 
 <br>
 
 <p align="center">
-  <a href="[https://ibb.co/zHBxzws](https://ibb.co/zHBxzws)"><img src="https://i.ibb.co/yBZPrJ0/Screen.png" alt="screen" border="0"></a>
+  <a href="https://ibb.co/zHBxzws"><img src="https://i.ibb.co/yBZPrJ0/Screen.png" alt="screen" border="0"></a>
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Tecnologias utilizadas durante o projeto:
+Technologies used in this project:
 
-- [ReactJS](https://pt-br.reactjs.org/)
-- [JavaScript](https://www.javascript.com/)
-- [Styled Components](https://styled-components.com/)
-- [Redux](https://redux.js.org/) 
+* [ReactJS](https://pt-br.reactjs.org/)
+* [JavaScript](https://www.javascript.com/)
+* [Styled Components](https://styled-components.com/)
+* [Redux](https://redux.js.org/)
 
-## ⭐ Conceitos implantados
-- React Hooks
-- React Router
-- CRUD
-- Responsividade
-- Redux para persistir os dados
-- Consumo de dados Fakes
+## ⭐ Implemented Concepts
 
-## 💻 Projeto
+* React Hooks
+* React Router
+* CRUD operations
+* Responsive design
+* Redux for state persistence
+* Consumption of mock (fake) data
 
-O IRRF é um sistema de cadastros de IRRFS que auxiliam os contribuintes na hora de enviar as informações fiscais para a receita, onde irá ter disponível já os cálculos de desconto de INSS e IRRF, o usuário poderá excluir e editar um contribuinte! 😄.
+## 💻 Project
 
-OBS: uma correção foi feita, é a aplicação está dentro dos conformes!
+The IRRF Registration System is an application that assists taxpayers when submitting their fiscal information to the tax authority. It automatically calculates INSS and IRRF deductions, and allows users to delete and edit taxpayer records 😄.
 
-## 😎 Iniciando 
+> **Note:** A fix has been applied, and the application is now fully compliant!
 
-📖 Para rodar o projeto localmente você precisará seguir algumas instruções.
+## 😎 Getting Started
 
-- É necessário que o <a href="https://nodejs.org/en/">NodeJS</a> esteja instalado em sua máquina.
-- É necessário utilizar <a href="https://classic.yarnpkg.com/en/">Yarn</a> ou <a href="https://www.npmjs.com/">Npm</a> para a instalação de pacotes.
+📖 To run this project locally, follow these steps:
 
-### Instalação
+* You need to have <a href="https://nodejs.org/en/">Node.js</a> installed on your machine.
+* You need to use <a href="https://classic.yarnpkg.com/en/">Yarn</a> or <a href="https://www.npmjs.com/">npm</a> to install dependencies.
+
+### Installation
+
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/larissadantier/IRRF.git
 
-# Instale todos os pacotes
+# Install dependencies
 
-- Npm
+# Using npm
 npm install
 
-- Yarn
+# Using Yarn
 yarn install
 
-Após tudo isso, você está pronto para rodar o projeto, basta inserir o comando:
+# Run the application
 
-- Npm
+# Using npm
 npm start
 
-- Yarn
+# Using Yarn
 yarn start
-
-
-Tudo pronto! Agora a sua aplicação vai rodar na porta localhost:3030! 😄
-
-
 ```
 
+After that, the application will be running at `http://localhost:3030`! 😄
 
-## Contribuições
+## 🤝 Contributing
+
+Want to contribute and don’t know how? 💜
 ```
-Você quer contribuir para o projeto e não sabe como? 💜
-
-1. Dê Fork no projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Comite as alterações (`git commit -m 'NOVO: Add some AmazingFeature'`)
-4. Faça o push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
+4. Push to your branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 ```
-## 📝 Licença
+## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👀 Autor
+## 👀 Author
+
 <div align="center">
   <a href="https://app.rocketseat.com.br/me/larissadantier">
-   <img align="center" style="border-radius: 100%;" src="https://avatars3.githubusercontent.com/u/61429963?s=400&u=0182f2fa598437842398e2f08f5dc6622df0b432&v=4" width="100px;" alt=""/>
+    <img align="center" style="border-radius: 100%;" src="https://avatars3.githubusercontent.com/u/61429963?s=400&u=0182f2fa598437842398e2f08f5dc6622df0b432&v=4" width="100px;" alt="Larissa Dantier"/>
   </a>
 </div>
 <br/>
-<p align="center">Desenvolvido por Larissa Dantier 🚀 </p> 
-<p align="center">Entre em contato! 👏 </p>
+<p align="center">Developed by Larissa Dantier 🚀</p>
+<p align="center">Get in touch! 👏</p>
 <div align="center">
-<a href="https://www.linkedin.com/in/larissadantier/" target="_blank">
+  <a href="https://www.linkedin.com/in/larissadantier/" target="_blank">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>&nbsp;&nbsp;
- <a href="https://www.instagram.com/larissa.dantier/" target="_blank">
-    <img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white" />        
+  <a href="https://www.instagram.com/larissa.dantier/" target="_blank">
+    <img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white" />
   </a>&nbsp;&nbsp;
- <a href="mailto:larissa_dantier@hotmail.com">
-    <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />        
-  </a>&nbsp;&nbsp; 
+  <a href="mailto:larissa_dantier@hotmail.com">
+    <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />
+  </a>
 </div>
-    
-
